@@ -11,7 +11,7 @@ import scandir
 from music21 import converter, instrument, note, chord
 
 fileName = "../training-data/beethoven" # Name of directory of data  
-s_l = 100 # Sequence length of data
+s_l = 128 # Sequence length of data
 
 def midRead(name):
 	# read midi files from directory, return midi objects

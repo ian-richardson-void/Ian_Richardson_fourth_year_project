@@ -10,8 +10,8 @@ from keras.utils import np_utils
 import prepMidiData
 from music21 import instrument, note, stream, chord
 
-weightsName = "../weights/beethoven-S100-B128-L0.4146.hdf5" # name of weight checkpoint file
-outputFileName = "new_sound.mid" # name of file to be outputted
+weightsName = "../weights/beethoven-S128-B128-L0.3661.hdf5" # name of weight checkpoint file
+outputFileName = "../my-generated/beethoven-S128-B128-L0.3661-.mid" # name of file to be outputted
 
 def gen(x, y, dataX, n_volcab, intToNote):
 	# creation of lstm neural net

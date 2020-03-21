@@ -13,7 +13,7 @@ def train(x, y, n_volcab):
 	# creation of lstm neural net
 	model = prepMidiData.getModel(x, y, n_volcab)
 	
-	filepath = "../weight-gen/{epoch:02d}-{loss:.4f}.hdf5" # destination and name of saved checkpoint files
+	filepath = "../weight-gen/{epoch:02d}-beethoven-S128-B128-L{loss:.4f}.hdf5" # destination and name of saved checkpoint files
 	checkpoint = ModelCheckpoint(
 		filepath, 
 		monitor="loss", 
@@ -27,7 +27,7 @@ def train(x, y, n_volcab):
 	model.fit(
 		x, 
 		y, 
-		epochs=200, 
+		epochs=240, 
 		batch_size=128, 
 		callbacks=callbacks_list
 	)
