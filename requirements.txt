@@ -1,0 +1,4 @@
+keras==2.3.1
+numpy==1.16.6
+music21==4.1.0
+scandir==1.10.0
