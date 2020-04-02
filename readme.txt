@@ -6,7 +6,7 @@ Ian Richardson 201603535
   will only be used as a helper file for the other 2. 
 
 - To run the project, the python files require you to have modules "numpy", "keras", "scandir" and "music21" installed, all available 
-  through pip. 
+  through pip. I have also created a requirements file, "pip install -r requirements.txt" should install all the packages for you. 
 
 - Running the python file "training.py" will train the neural network on a given data set (specified at the top of "prepMidiData.py") and 
   write some weight checkpoint files out as ".hdf5" into the "weight-gen" directory, this may take some time especially on large data sets 
